@@ -1,0 +1,12 @@
+# High-Throughput Ledger Infrastructure Configuration
+
+database:
+  provider: "sqlite"
+  target_path: "storage_warehouse.db"
+  pool_size: 5
+  timeout: 30
+
+performance_gates:
+  chunk_size: 100000          # Limits processing to exactly 100K rows at a time
+  numeric_precision: "32bit"   # Forces downcasting from 64-bit to 32-bit types
+  enable_vectorization: true

@@ -1,0 +1,19 @@
+# --- Local Relational Databases ---
+# Never push local database storage files to GitHub
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Python Environment & Caches ---
+# Blocks hidden Python execution caches from cluttering your repository
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# --- Operating System Junk ---
+# Blocks background desktop files created by Windows/Mac
+.DS_Store
+Thumbs.db
